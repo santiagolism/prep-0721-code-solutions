@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+/* stylelint-disable block-no-empty */
+body {
+  font-family: sans-serif;
+}
+h1 { text-align: center; }
+
+h3 { text-align: center; }
+
+.container {
+  max-width: 992px;
+  margin: auto;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.column {
+  flex-basis: calc(100% / 3);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+  </style>
+</head>
+<body>
+
+<!-- Complete the HTML here -->
+<h3 style="font-size: 30px; font-family: 'Times New Roman', Times, serif;"> INDIANA JONES</h3>
+<div class="container">
+  <div class="row">
+    <div class="column"><img src="images/crusade.jpg" alt="Crusade" width="100%">
+    <header>
+        <h1 style="font-size: 25px;">Last Crusade</h1>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In 1912, 13-year-old Henry "Indiana" Jones, Jr., is horseback riding with his Boy Scout troop at Arches National Park in
+      Utah.
+      </p>
+    </header>
+    </div>
+
+
+
+    <div class="column">
+      <img src="images/raiders.jpg" alt="Raiders" width="100%">
+    <header>
+        <h1 style="font-size: 25px;">Raiders of the Lost Ark</h1>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant
+      before Adolf Hitler's Nazis can obtain its awesome powers
+      </p>
+    </header>
+    </div>
+
+    <div class="column"><img src="images/temple.jpg" alt="Templete" width="100%">
+    <header>
+        <h1 style="font-size: 25px;">Temple of Doom</h1>
+      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">In 1935, Indiana Jones arrives in India, still part of the British Empire, and is asked to find a mystical stone. He
+      then stumbles upon a secret cult committing enslavement and human sacrifices in the catacombs of an ancient palace.
+      </p>
+    </header>
+    </div>
+
+ </div>
+  </div>
+</body>
+</html>
